@@ -1,0 +1,560 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbff; /* Cor de fundo geral */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    height: 100vh; /* Altura da tela toda */
+}
+
+h1 {
+    text-align: center;
+    color: #4c6baf; /* Cor do título */
+    margin: 20px 0; /* Margem superior e inferior do título */
+}
+
+
+                                                                /* perceria_etec */
+.parceiros {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.parceiros h2, .parceiros h3 {
+    color: #333;
+}
+
+.parceiros h2 {
+    margin-bottom: 10px;
+}
+
+.parceiros h3 {
+    margin-top: 10px;
+}
+
+.parceiros .linha {
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto;
+}
+
+.parceiros img {
+    width: 150px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.parceiros img:hover {
+    transform: scale(1.2);
+}
+
+
+
+                                                                    /* geral */
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+                                                                    /* objetivos */
+
+.objetivos-container {
+max-width: 1200px; /* Aumenta a largura máxima */
+margin: 20px auto; /* Centraliza o container com espaçamento superior e inferior */
+padding: 30px; /* Aumenta o padding */
+background-color: #f1f1fa; /* Fundo mais claro */
+border-radius: 20px; /* Bordas arredondadas */
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
+transition: transform 0.4s ease, background-color 0.4s ease; /* Animação suave */
+font-family: 'Georgia', serif;
+}
+                                                                    
+.objetivos-container:hover {
+transform: translateY(-10px); /* Animação de elevação ao passar o mouse */
+background-color: #e2e2f8; /* Muda o fundo ao hover */
+}
+                                                                    
+.titulo-objetivos {
+text-align: center;
+padding: 40px; /* Aumenta o padding do título */
+color: #4c5eaf;
+font-size: 28px; /* Tamanho de fonte maior */
+border-bottom: 2px solid #4c5eaf;
+margin: 30px 0;
+background-color: #e9eaf5;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+font-family: 'Arial', sans-serif;
+letter-spacing: 1.5px; /* Espaçamento entre letras */
+transition: background-color 0.4s ease; /* Animação no título */
+}
+                                                                    
+.titulo-objetivos:hover {
+background-color: #d8d8f5; /* Muda a cor de fundo ao hover no título */
+}
+                                                                    
+.conteudo-objetivos {
+display: block;
+margin: 0 auto;
+max-width: 1100px; /* Aumenta a largura do conteúdo */
+padding: 25px;
+font-size: 20px; /* Fonte maior para o conteúdo */
+line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+color: #333;
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: justify;
+transition: transform 0.4s ease; /* Animação suave ao hover */
+}
+
+.conteudo-objetivos:hover {
+transform: scale(1.02); /* Aumenta o conteúdo levemente ao passar o mouse*/
+}
+
+label {
+display: block;
+margin-bottom: 20px;
+}
+
+
+                                                                    /* ODS & Acontece na Etec */
+.ods-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    justify-content: center; /* Centraliza o conteúdo no container */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9fc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    gap: 20px;
+}
+
+.link-imagem {
+    display: inline-block; /* Garante que o link só envolva a imagem */
+    max-width: 25%; /* Tamanho da imagem como estava antes */
+}
+
+.imagem-ods {
+    width: 100%; /* Garante que a imagem ocupe 100% do tamanho do link */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.conteudo {
+    max-width: 60%; /* O texto ocupa 60% do container */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.titulo {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o título */
+    font-family: 'Arial', sans-serif;
+    border-bottom: 2px solid #4c5eaf;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    font-family: 'Georgia', serif; /* Fonte serifada */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
+                                                            /* equipe */
+
+.equipe-container {
+    max-width: 1000px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #f9f9fc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+                                               
+.titulo-equipe {
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #4c5eaf;
+    margin: 20px 0;
+    background-color: #e9eaf5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+                                                            
+.conteudo-equipe {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Georgia', serif;
+}
+                                                            
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.saber-mais {
+    font-size: 18px;
+    color: #6a5acd; /* Cor roxa suave que combina com o botão anterior */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Linha sutil que aparecerá no hover */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transições suaves */
+    padding: 5px;
+}
+
+.saber-mais:hover {
+    color: #836fff; /* Cor mais clara ao passar o mouse */
+    border-bottom: 2px solid #836fff; /* Aparece uma linha embaixo ao passar o mouse */
+    cursor: pointer;
+}
+
+.saber-mais:active {
+    color: #483d8b; /* Cor mais escura quando clicado */
+    border-bottom: 2px solid #483d8b; /* Linha mais escura no clique */
+}
+
+                                                            
+
+                                                            /* atividade */
+
+.container {
+    max-width: 800px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.titulo {
+    text-align: center;
+    font-size: 32px; /* Aumenta o tamanho do título */
+    color: #4c5eaf; /* Cor do título */
+    border-bottom: 3px solid #4c5eaf; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+.nivel {
+    font-size: 28px; /* Aumenta o tamanho do título do nível */
+    color: #333;
+    margin-top: 30px; /* Espaço acima do título do nível */
+    margin-bottom: 10px; /* Espaço abaixo do título do nível */
+}
+
+.atividade {
+    background-color: #e9eaf5; /* Fundo suave para as atividades */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre as atividades */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Transição para o efeito de hover */
+}
+
+.atividade:hover {
+    transform: translateY(-5px); /* Efeito de movimento para cima ao passar o mouse */
+}
+
+.atividade h3 {
+    color: #4c5eaf; /* Cor do título da atividade */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.atividade p {
+    font-size: 18px; /* Aumenta o tamanho do texto das descrições */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+
+                                                            /* cards */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se não houver espaço */
+    width: 100vw; /* Largura total da janela */
+    height: auto; /* Altura automática para acomodar conteúdo */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    padding: 30px; /* Espaçamento interno do container */
+    background-color: #e9ecef; /* Cor de fundo suave para o container */
+}
+
+.card {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Gradiente suave no fundo do card */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra mais suave para os cards */
+    padding: 30px; /* Espaçamento interno */
+    margin: 15px; /* Espaçamento externo dos cards */
+    flex: 1 1 30%; /* Define que o card ocupará aproximadamente 30% da largura disponível */
+    min-width: 250px; /* Largura mínima para os cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animação suave na transformação e sombra */
+    border: 1px solid #e3e3e3; /* Borda sutil ao redor do card */
+    position: relative; /* Para posicionamento absoluto interno */
+    overflow: hidden; /* Para esconder conteúdo que sair do card */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card h3 {
+    font-size: 22px; /* Tamanho da fonte do título */
+    color: #4c6aaf; /* Cor do título */
+    margin: 0 0 15px; /* Margem inferior */
+    font-weight: bold; /* Deixa o título em negrito */
+    font-family: 'Arial', sans-serif; /* Fonte moderna */
+}
+
+.card p {
+    font-size: 16px; /* Tamanho da fonte do conteúdo */
+    color: #555; /* Cor do conteúdo */
+    margin: 0 0 15px; /* Margem inferior */
+    line-height: 1.5; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+.card a {
+    display: inline-block; /* Exibe o link como bloco */
+    background-color: #4c6aaf; /* Cor de fundo do link */
+    color: white; /* Cor do texto do link */
+    padding: 12px 24px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Bordas arredondadas do link */
+    text-decoration: none; /* Remove sublinhado do link */
+    text-align: center; /* Centraliza o texto do link */
+    font-weight: bold; /* Deixa o texto do link em negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para o botão */
+}
+
+.card a:hover {
+    background-color: #4556a0; /* Muda a cor do fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse no link */
+}
+
+
+                                                    /* FAQ */
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo-faq {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.linha-titulo {
+    border: 2px solid #4c5eaf; /* Cor da linha */
+    width: 50%; /* Largura da linha */
+    margin: 0 auto; /* Centraliza a linha */
+    margin-bottom: 30px; /* Espaço abaixo da linha */
+}
+
+.faq-card {
+    background-color: #fff; /* Fundo branco para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px 0; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno do card */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+.faq-card:hover {
+    transform: scale(1.02); /* Aumenta um pouco o card ao passar o mouse */
+}
+
+.pergunta {
+    font-size: 24px; /* Tamanho da fonte das perguntas */
+    color: #4c5eaf; /* Cor das perguntas */
+    margin: 0; /* Remove margens */
+}
+
+.resposta {
+    font-size: 18px; /* Tamanho da fonte das respostas */
+    color: #555; /* Cor das respostas */
+    margin-top: 10px; /* Espaçamento acima da resposta */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+
+
+
+                                                    /* recomendações */
+.titulo-principal {
+    text-align: center;
+    font-size: 36px; /* Aumenta o tamanho do título principal */
+    color: #2c3e50; /* Cor mais escura para o título */
+    margin: 40px 0; /* Margem superior e inferior */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.titulo-principal:hover {
+    color: #007bff; /* Mudança de cor ao passar o mouse */
+}
+
+.texto-inicial {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 20px 0; /* Margem superior e inferior */
+    padding: 15px; /* Aumenta o padding para mais espaço interno */
+    background: linear-gradient(to right, #f0f4ff, #e8f0fe); /* Gradiente de fundo suave */
+    border-left: 5px solid #007bff; /* Borda lateral */
+    color: #333; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: background 0.3s; /* Transição suave para o fundo */
+}
+
+.texto-inicial:hover {
+    background: linear-gradient(to right, #e8f0fe, #f0f4ff); /* Mudança de cor ao passar o mouse */
+}
+
+.card {
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    margin: 20px 0; /* Espaço entre os cards */
+    overflow: hidden; /* Evita que o conteúdo transborde */
+    transition: transform 0.3s; /* Transição suave para a transformação */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+.card-header {
+    padding: 15px; /* Espaçamento interno do cabeçalho */
+    border-bottom: 2px solid #4c5eaf; /* Linha abaixo do cabeçalho */
+    background-color: #f8f9fa; /* Fundo mais claro para o cabeçalho */
+    transition: background 0.3s; /* Transição suave para o fundo */
+}
+
+.card-header:hover {
+    background-color: #e3e3e3; /* Mudança de cor ao passar o mouse */
+}
+
+.titulo-secundario {
+    font-size: 28px; /* Tamanho do subtítulo */
+    color: #34495e; /* Cor mais escura para o subtítulo */
+    margin: 0; /* Remove margens padrão */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
+}
+
+.card-body {
+    padding: 20px; /* Espaçamento interno do corpo do card */
+}
+
+.lista {
+    list-style-type: none; /* Remove a marcação padrão da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.item {
+    position: relative; /* Para posicionar o ícone de toggle */
+    padding: 10px 0; /* Espaçamento vertical */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.item:hover {
+    color: #007bff; /* Destaca o item ao passar o mouse */
+}
+
+.toggle-icon {
+    margin-left: 10px; /* Espaço entre o texto e o ícone de toggle */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.sub-list {
+    list-style-type: square; /* Marca os itens com quadrados */
+    padding-left: 20px; /* Adiciona padding à lista interna */
+    display: none; /* Inicialmente oculta as sublistas */
+}
+
+.sub-item {
+    font-size: 16px; /* Tamanho do texto dos itens internos */
+    color: #555; /* Cor mais suave para o texto interno */
+    margin-top: 5px; /* Margem superior para espaçamento */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.sub-item:hover {
+    color: #007bff; /* Destaque ao passar o mouse */
+}
+
+/* Efeito de transição para a sub-lista */
+.sub-list.show {
+    display: block; /* Mostra a sub-lista quando a classe "show" é adicionada */
+}
+
+
+
+                                                            /* rodapé */
+.footer {
+    background-color: #4c6baf; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para posicionamento absoluto se necessário */
+}
+
+.footer-content {
+    max-width: 1000px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+.footer p {
+    margin: 10px 0; /* Margem entre os parágrafos */
+}
+
+.info-academica {
+    font-style: italic; /* Estilo itálico para a informação acadêmica */
+    font-size: 1em; /* Tamanho da fonte menor */
+    color: #f0f0f0; /* Cor um pouco mais clara para diferenciar */
+}
+
+/* Efeito de hover para o footer */
+.footer:hover {
+    background-color: #3a5b8a; /* Cor mais escura ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Adicionando uma linha superior ao footer */
+.footer::before {
+    content: '';
+    display: block;
+    width: 100%; /* Largura total */
+    height: 4px; /* Altura da linha */
+    background-color: #f0f0f0; /* Cor da linha */
+    margin-bottom: 10px; /* Espaçamento abaixo da linha */
+}

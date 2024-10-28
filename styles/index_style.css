@@ -1,0 +1,208 @@
+
+
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #0a121b; /* Azul */
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 1.2em;
+        }
+        
+        /* Botão */
+        header button {
+            background-color: #cb355d; /* Rosa */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        header button:hover {
+            background-color: #D63D66; /* Rosa escuro */
+        }
+        
+        /* Seção de destaques */
+        .destaques {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .destaques h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        /* Seção de depoimentos */
+        .depoimentos {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #F5F5F5; /* Cinza claro */
+        }
+        
+        .depoimentos h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .depoimentos blockquote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+
+        
+        .destaques p {
+            font-size: 1.2em;
+            margin-bottom: 30px; /* Adicione espaço entre o texto e o gráfico */
+        }
+        
+        .destaques ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o padding padrão */
+        }
+        
+        .destaques li {
+            font-size: 1.1em; /* Tamanho da fonte para itens da lista */
+            margin: 10px 0; /* Espaço entre os itens da lista */
+        }
+        
+        .grafico-pizza {
+            max-width: 600px; /* Limita a largura do gráfico */
+            margin: 0 auto; /* Centraliza o gráfico */
+        }
+        
+
+        /* intro */
+        .introducao-section {
+            background-color: #e9eaf5; /* Fundo suave */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 40px; /* Espaçamento interno */
+            margin: 20px auto; /* Margens superior e inferior */
+            max-width: 1000px; /* Aumenta a largura máxima da seção */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            text-align: center; /* Centraliza o texto */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+        }
+        
+        .introducao-section:hover {
+            transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+        }
+        
+        .introducao-title {
+            color: #4c6baf; /* Cor do título */
+            font-size: 2em; /* Tamanho do título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+        
+        .introducao-content {
+            display: flex; /* Usa flexbox para alinhar o texto e a imagem */
+            align-items: center; /* Alinha verticalmente os itens */
+            gap: 20px; /* Espaço entre a imagem e o texto */
+        }
+        
+        .introducao-text-container {
+            flex: 1; /* Permite que o texto ocupe o espaço restante */
+        }
+        
+        .introducao-text {
+            color: #555; /* Cor do texto */
+            font-size: 1.5em; /* Tamanho da fonte do parágrafo */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            margin: 0; /* Remove margens padrão */
+        }
+        
+        .logica-icon {
+            width: 200px; /* Ajusta a largura da imagem para 100px */
+            height: auto; /* Altura automática para manter a proporção */
+        }
+        
+        
+        
+
+        /* seção 2 */
+
+        .destaques-content {
+            display: flex; /* Usa flexbox para alinhar a imagem e o texto */
+            align-items: center; /* Alinha verticalmente os itens */
+            gap: 20px; /* Espaço entre a imagem e o texto */
+        }
+        
+        .destaques-image {
+            width: 300px; /* Aumenta a largura da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+        }
+        
+        .destaques-text-container {
+            flex: 1; /* Permite que o texto ocupe o espaço restante */
+        }
+        
+        .destaques {
+            background-color: #f5f5f5; /* Fundo cinza claro */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 40px; /* Espaçamento interno */
+            margin: 20px auto; /* Margens superior e inferior */
+            max-width: 1000px; /* Limite de largura */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            text-align: left; /* Alinhamento do texto à esquerda */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+        }
+        
+        .destaques:hover {
+            transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+        }
+        
+        .destaques-title {
+            color: #4c6baf; /* Cor do título */
+            font-size: 2em; /* Tamanho do título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+        
+        .destaques-text {
+            color: #555; /* Cor do texto */
+            font-size: 1.5em; /* Tamanho da fonte do parágrafo */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            margin: 0; /* Remove margens padrão */
+        }
+        
+
+        /* frase Paulo Freire */
+
+        .depoimentos {
+            padding: 30px; /* Aumenta o espaçamento interno */
+            margin: 30px auto; /* Mantém margens superior e inferior */
+            max-width: 900px; /* Mantém o limite de largura */
+            text-align: center; /* Centraliza o texto */
+        }
+        
+        .depoimentos-title {
+            color: #4c6baf; /* Cor do título */
+            font-size: 2.5em; /* Aumenta o tamanho do título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+        
+        .depoimentos-text {
+            color: #555; /* Cor do texto */
+            font-size: 1.5em; /* Tamanho da fonte do bloco de citação */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            margin: 0; /* Remove margens padrão */
+            font-style: italic; /* Estilo itálico para o bloco de citação */
+            padding: 20px; /* Adiciona um pouco de espaçamento ao redor do texto */
+            border-left: 4px solid #4c6baf; /* Adiciona uma linha lateral para destaque */
+        }
+        

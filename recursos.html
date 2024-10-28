@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Etech</title>
+  <link rel="website icon" href="images/logo_topo.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      width: 40px;
+      height: auto;
+      font-family: Verdana;
+    }
+  </style>
+
+
+  <!-- imagens customizadas do site, para o botão de inverter cores -->
+  <link href="navbars.css" rel="stylesheet">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <!-- Botão para inverter as cores do site -->
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Menu do site -->
+  <main>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="images/logo_completa.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            
+                    <!-- home -->
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+            </ul>
+
+                <!-- Sobre nós -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sobre o Site</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="objetivos.html">Objetivos</a></li>
+                <li><a class="dropdown-item" href="acontece_na_etec.html">Acontece na Etec</a></li>
+                <li><a class="dropdown-item" href="ODS.html">ODS escolhida</a></li>
+                <li><a class="dropdown-item" href="equipe.html">Sobre a Equipe</a></li>               
+              </ul>
+            </li>
+
+            <!-- Atividades -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Atividades</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pratique.html">Pratique</a></li> 
+                <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>             
+              </ul>
+            </li>
+
+            <!-- Recursos adicionais -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Recursos Adicionais</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="recursos.html">Recursos para DEVs</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input id="search" class="form-control" type="search" placeholder="Pesquisa" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+              
+    <h1 class="titulo-principal">Nossas recomendações</h1>
+
+    <p class="texto-inicial">
+      Esta página é dedicada a pessoas que estão dando os primeiros passos na programação. Aqui, vamos compartilhar algumas <strong>ferramentas indispensáveis</strong> para aqueles que desejam aprimorar suas habilidades e se destacar na área. A seguir, indicaremos algumas <strong>IDEs e extensões úteis</strong> que podem facilitar sua jornada como programador.
+  </p>
+  
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 class="titulo-secundario">IDEs</h2>
+        </div>
+        <div class="card-body">
+            <ul class="lista">
+                <li class="item">
+                    <strong class="item-foco">Visual Studio Code (VS Code)</strong>: Muito popular entre desenvolvedores por sua flexibilidade e vasta gama de extensões.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">IntelliJ IDEA</strong>: Ideal para desenvolvimento em Java, mas também suporta outras linguagens.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">PyCharm</strong>: Focado em desenvolvimento Python, oferece recursos avançados.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">Eclipse</strong>: Uma das IDEs mais antigas e robustas, especialmente para Java.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">NetBeans</strong>: Outra excelente opção para Java, mas também suporta outras linguagens.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">Xcode</strong>: A escolha principal para desenvolvimento em macOS e iOS.
+                </li>
+                <li class="item">
+                    <strong class="item-foco">Android Studio</strong>: A IDE oficial para desenvolvimento Android.
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 class="titulo-secundario">Extensões para IDEs</h2>
+        </div>
+        <div class="card-body">
+            <ul class="lista">
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">Visual Studio Code (VS Code)</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">Prettier: Formata automaticamente o código.</li>
+                        <li class="sub-item">ESLint: Ajuda a encontrar e corrigir problemas.</li>
+                        <li class="sub-item">Live Server: Permite visualizar mudanças em tempo real.</li>
+                        <li class="sub-item">GitLens: Melhora a integração com Git.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">IntelliJ IDEA</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">Lombok: Simplifica o código Java com anotações.</li>
+                        <li class="sub-item">CheckStyle-IDEA: Mantém o código Java limpo.</li>
+                        <li class="sub-item">SonarLint: Detecta problemas de qualidade de código.</li>
+                        <li class="sub-item">Rainbow Brackets: Facilita a leitura de código.</li>
+                        <li class="sub-item">Docker: Integração com Docker.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">PyCharm</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">Pylint: Ferramenta de análise de código Python.</li>
+                        <li class="sub-item">Black: Formatação automática de código Python.</li>
+                        <li class="sub-item">Kite: Autocompletar avançado para Python.</li>
+                        <li class="sub-item">Markdown: Suporte para edição de arquivos Markdown.</li>
+                        <li class="sub-item">Database Navigator: Facilita o gerenciamento de bancos de dados.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">Eclipse</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">EclEmma: Ferramenta de cobertura de código para Java.</li>
+                        <li class="sub-item">SpotBugs: Encontra bugs no código Java.</li>
+                        <li class="sub-item">Maven Integration: Suporte para projetos Maven.</li>
+                        <li class="sub-item">Spring Tools: Ferramentas para desenvolvimento com Spring Framework.</li>
+                        <li class="sub-item">PyDev: Suporte para desenvolvimento em Python.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">NetBeans</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">Checkstyle: Mantém o código Java limpo e consistente.</li>
+                        <li class="sub-item">FindBugs: Detecta bugs no código Java.</li>
+                        <li class="sub-item">JUnit: Suporte para testes unitários em Java.</li>
+                        <li class="sub-item">Gradle: Integração com o sistema de build Gradle.</li>
+                        <li class="sub-item">PHP Tools: Suporte para desenvolvimento em PHP.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">Xcode</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">CocoaPods: Gerenciamento de dependências para projetos iOS.</li>
+                        <li class="sub-item">SwiftLint: Mantém o código Swift limpo e consistente.</li>
+                        <li class="sub-item">Fastlane: Automatiza tarefas de desenvolvimento e lançamento de apps.</li>
+                        <li class="sub-item">InjectionIII: Permite injetar código Swift em tempo real.</li>
+                        <li class="sub-item">Alcatraz: Gerenciador de plugins para Xcode.</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="toggleExtension(this)">
+                    <strong class="item-foco">Android Studio</strong>
+                    <span class="toggle-icon">▼</span>
+                    <ul class="sub-list">
+                        <li class="sub-item">Kotlin: Suporte completo para desenvolvimento em Kotlin.</li>
+                        <li class="sub-item">ButterKnife: Simplifica a ligação de views em Android.</li>
+                        <li class="sub-item">LeakCanary: Detecta vazamentos de memória em apps Android.</li>
+                        <li class="sub-item">Firebase: Integração com serviços Firebase para apps móveis.</li>
+                        <li class="sub-item">Retrofit: Biblioteca para fazer requisições HTTP.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    
+        <footer class="footer">
+          <div class="footer-content">
+              <p>Etech 2024 - todos os direitos reservados</p>
+              <p class="info-academica">TRABALHO ACADÊMICO SEM FINS LUCRATIVOS</p>
+          </div>
+      </footer>
+      
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+  </main>
+
+
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
+  <script>function toggleExtension(item) {
+    const subList = item.querySelector('.sub-list');
+    subList.classList.toggle('show'); // Alterna a classe "show" para mostrar/esconder
+}
+</script>
+</body>
+</html>
